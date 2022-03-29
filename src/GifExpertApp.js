@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AddCategory } from './Components/AddCategory';
+import AddCategory from './Components/AddCategory';
 
 
 const GifExpertApp = () => {
