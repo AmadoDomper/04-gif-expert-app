@@ -30,17 +30,17 @@ const [images, setImages] = useState([]);
     // getGifs();
 
   return (
-    <div>
+      <>
         <h3>{ category }</h3>
-        <ol>
-            {
-                images.map( img => (
-                   <GifGridItem 
-                        key= { img.id } 
-                        {...img} />
-                ))
-            }
-        </ol>
-    </div>
+        <div className='card-grid'>
+                {
+                    images.map( img => (
+                    <GifGridItem 
+                            key= { img.id } 
+                            {...img} />
+                    ))
+                }
+        </div>
+    </>
   )
 }
