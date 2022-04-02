@@ -4,9 +4,13 @@ exports[`Testing in <GifGridItem /> should show <GifGridItem /> correctly 1`] = 
 <div
   className="card animate__animated animate__fadeIn animate__delay-2s"
 >
-  <img />
+  <img
+    alt="A tittle"
+    src="https://localhost/something.jpg"
+  />
   <p>
      
+    A tittle
   </p>
 </div>
 `;
