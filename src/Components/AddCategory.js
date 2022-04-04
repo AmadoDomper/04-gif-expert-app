@@ -5,12 +5,15 @@ import PropTypes from 'prop-types';
     const [inputValue, setinputValue] = useState('');
 
     const handleInputChange = (e) => {
-        // console.log(e.target.value);
         setinputValue(e.target.value);
+
+        console.log('HadleInputChange call')
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        console.log('handleSubmit', inputValue);
 
         if(inputValue.trim().length > 2){
             setCategories(cats => [inputValue, ...cats]);
@@ -21,6 +24,7 @@ import PropTypes from 'prop-types';
 
   return (
     <form onSubmit={handleSubmit}>
+    <p>{ inputValue }</p>
       <input 
             type='text' 
             value={inputValue} 
