@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing in <GifGrid /> should show component correctly 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn animate__delay-2s"
+  >
+    Goku
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Loading...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
+
+exports[`Testing in <GifGrid /> should show items when call useFetchGifs 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn animate__delay-2s"
+  >
+    Goku
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <Component
+      id="ABC"
+      key="ABC"
+      title="everything"
+      url="https//localhost/anything/thing.jpg"
+    />
+  </div>
+</Fragment>
+`;
